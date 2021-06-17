@@ -1,4 +1,4 @@
-# Homepage for Matthew Ballance
+# Home
 
 ## Projects
 
