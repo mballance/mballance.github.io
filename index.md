@@ -56,16 +56,19 @@ I'm making to the various projects I work on.
 
 ### SVEditor - An Eclipse Plug-in for Developing SystemVerilog
 
-[website](https://sites.google.com/site/svedvkit)
-[github](https://github.com/sveditor/sveditor)
+#### Resources
+- [website](https://sites.google.com/site/svedvkit)
+- [github](https://github.com/sveditor/sveditor)
 
 ### PyBFMs - Bus-Functional Models for Python
 
-[github](https://github.com/pybfms)
+#### Resources
+- [github](https://github.com/pybfms)
 
 ### Featherweight-IP
 
-[github](https://github.com/featherweight-ip)
+#### Resources
+- [github](https://github.com/featherweight-ip)
 
 ### IVPM - IP and Verification Package Manager
 Design and Verification IP comes from many sources. While it 
@@ -78,6 +81,8 @@ creating a project-local set of package dependencies.
 #### Key Features
 - Integration with SVE
 
+#### Resources
+- [github](https://github.com/fvutils/ipvm)
 
 ### PyVSC - Constraints and Coverage in Python
 Python has been used for functional verification for quite 
@@ -87,23 +92,25 @@ constraints and functional coverage. PyVSC provides a
 Python library that supports constrained randomization
 and functional coverage collection.
 
-[readthedocs](https://pyvsc.readthedocs.io/en/latest/)
-[github](https://github.com/fvutils/pyvsc)
+#### Resources
+- [readthedocs](https://pyvsc.readthedocs.io/en/latest/)
+- [github](https://github.com/fvutils/pyvsc)
 
 ### MKDV - Job Runner for Functional Verification
 
-[github](https://github.com/fvutils/mkdv)
 
 #### Key Features
 - Support for SLURM and LSF
 - Integration with Allure
 - 
 
+#### Resources
+- [github](https://github.com/fvutils/mkdv)
+
 ## Articles, Papers, and Blog Posts
 
 TBD
 
 
-### Subprojects
 
 
