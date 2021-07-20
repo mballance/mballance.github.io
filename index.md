@@ -1,7 +1,5 @@
 # Home
 
-# Title
-
 **Under Construction**
 
 ## Professional Life
