@@ -40,7 +40,11 @@ variety of software debuggers.
 
 ## Publications
 I enjoy writing about the work I'm doing, and presenting 
-at conferences. You can find a list of publications [here](publications.html) 
+at conferences. You can find a list of publications [here](publications.html). 
+
+I maintain a blog for my [personal projects](https://bitsbytesgates.blogspot.com/). 
+This is where I write about new things I'm exploring, and enhancements
+I'm making to the various side projects that I work on. 
 
 ## Personal Projects
 
@@ -49,11 +53,6 @@ open-source project running. I love learning new things, and
 find that projects are the perfect way for me to learn. Given my
 interest in hardware/gateware and functional verification, 
 my projects, unsurprisingly, focus on this space. 
-
-I blog about my projects on my 
-[personal blog](https://bitsbytesgates.blogspot.com/). This is 
-where I write about new things I'm exploring, and enhancements
-I'm making to the various projects I work on. 
 
 
 ### SVEditor - An Eclipse Plug-in for Developing SystemVerilog
