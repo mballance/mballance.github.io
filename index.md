@@ -38,6 +38,10 @@ more processor models with the simulation environment,
 a library of processor models, and support for a 
 variety of software debuggers.
 
+## Publications
+I enjoy writing about the work I'm doing, and presenting 
+at conferences. You can find a list of publications [here](publications.html) 
+
 ## Personal Projects
 
 I always have at least one (and typically several) personal
