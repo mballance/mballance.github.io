@@ -134,7 +134,7 @@ the absence of an open-source toolflow.
 
 **Stage:** Production / Archived
 
-<img src="images/SVEditor.git"/>
+<img src="images/SVEditor.gif"/>
 
 ### Resources
 - [website](https://sites.google.com/site/svedvkit)
