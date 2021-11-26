@@ -21,19 +21,41 @@ and functional coverage collection.
 
 **Stage:** Production
 
+#### Resources
+- [github](https://github.com/pyucis)
+- [Accellera UCIS](https://www.accellera.org/downloads/standards/ucis)
+
 ### PyUCIS-Viewer
 
 **Stage:** Beta
+
+<img src="images/RISCV-DV_Coverage.PNG" height="240"/>
+
+#### Resources
+- [github](https://github.com/fvutils/pyucis-viewer)
 
 ### libvsc
 
 **Stage:** Development
 
+#### Resources
+- [github](https://github.com/fvutils/libucis)
+
 ## Software-Driven Functional Verification
 
-## Design IP
+### Bare-Metal Kernel
 
-### Featherweight-IP
+**Stage:** Alpha
+
+### Zephyr-Cosim
+
+**Stage:** Alpha
+
+### Zephyr DV Patches
+
+### Zephyr DTS Tools
+
+## Featherweight-IP
 
 ### Resources
 - [github](https://github.com/featherweight-ip)
@@ -56,12 +78,13 @@ creating a project-local set of package dependencies.
 
 ### MKDV - Job Runner for Functional Verification
 
+<img src="images/AllureRegression.png" height="240"/>
 
 #### Key Features
-- YAML-based configuration of 
+- YAML-based specification of job configurations
 - Support for running parallel jobs locally or via [Slurm Workload Manager](https://slurm.schedmd.com/documentation.html)
-- Integration with [Allure](https://docs.qameta.io/allure/)
-- 
+- Integration with [Allure](https://docs.qameta.io/allure/) for reports
+
 
 ### Resources
 - [github](https://github.com/fvutils/mkdv)
@@ -73,14 +96,33 @@ creating a project-local set of package dependencies.
 - [github](https://github.com/pybfms)
 
 ## eFabless/Google Multi-Project Wafer (MPW) Shuttle
+Taping out a chip was a long-term dream, and one that seemed unlikely
+to be realized given the difficulty and expense of doing so. A few 
+developments in the industry brought this dream within reach. 
+First, the [OpenROAD Project](https://theopenroadproject.org/) assembled
+an RTL-to-GDS flow using open-source tools. Next, Google partnered with 
+[SkyWater Technology](https://www.skywatertechnology.com/) 
+to release the CMOS 130nm PDK as open source, and partnered with 
+[eFabless](https://efabless.com/) to run a series of 
+multi-project wafer (MPW) tape-outs for open-source designs to 
+validate the flow.
 
-<img src="images/FWPayload_rot.PNG" height="480"/>
+I participated in the first tapeout with a very simple SoC design. 
+The design and testbench environment are shown below.
 
-<img src="images/fwpayload_tb_diagram.png"/>
+<img src="images/fwpayload_tb_diagram.png" height="240"/>
+
+<img src="images/FWPayload_rot.PNG" height="240"/>
+
+Learning about the tools and key considerations across the entire
+process was extremely educational -- and, self-education process I
+would have been unlikely to undertake as a personal project in 
+the absence of an open-source toolflow.
+
 
 ### Resources
 - [github](https://github.com/mballance/caravel_fwpayload)
-
+- [PR](https://www.businesswire.com/news/home/20210406005366/en/First-Google-Sponsored-MPW-Shuttle-Launched-at-SkyWater-with-40-Open-Source-Community-Submitted-Designs)
 
 
 ## SVEditor - An Eclipse Plug-in for Developing SystemVerilog
