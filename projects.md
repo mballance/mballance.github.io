@@ -3,6 +3,9 @@
 ## Random Test Generation, Solvers, and Functional Coverage
 
 ### PyVSC - Constraints and Coverage in Python
+
+**Stage:** Production
+
 Python has been used for functional verification for quite 
 some time. When I began using Python, one thing I missed
 from SystemVerilog was access to SystemVerilog-style 
@@ -10,12 +13,16 @@ constraints and functional coverage. PyVSC provides a
 Python library that supports constrained randomization
 and functional coverage collection.
 
-**Stage:** Production
+*Note:* PyVSC is used for constraint solving and collecting
+functional coverage by the Python implementation of the
+Google-developed RISCV-DV package. RISCV-DV generates 
+random RISC-V test programs.
 
 #### Resources
 - [readthedocs](https://pyvsc.readthedocs.io/en/latest/)
 - [github](https://github.com/fvutils/pyvsc)
 - [WOSET Paper](publications/2020_WOEST_SvStyle_Constraints_Coverage_in_Python.pdf)
+- [RISCV-DV](https://github.com/google/riscv-dv)
 
 ### PyUCIS
 
@@ -85,6 +92,8 @@ creating a project-local set of package dependencies.
 
 ### MKDV - Job Runner for Functional Verification
 
+**Stage:** Beta / Internal Production
+
 <img src="images/AllureRegression.png" height="360"/>
 
 #### Key Features
@@ -100,9 +109,13 @@ creating a project-local set of package dependencies.
 ### Resources
 - [github](https://github.com/pybfms)
 
-## eFabless/Google Multi-Project Wafer (MPW) Shuttle (2020)
-Taping out a chip was a long-term dream, and one that seemed unlikely
-to be realized given the difficulty and expense of doing so. A few 
+## eFabless/Google Multi-Project Wafer (MPW)
+
+**Stage:** Complete (Dec 2020)
+
+Taping out a chip has been a long-term dream of mine, and 
+one that seemed unlikely to be realized given the difficulty 
+and expense of doing so. A few 
 developments in the industry brought this dream within reach. 
 First, the [OpenROAD Project](https://theopenroadproject.org/) assembled
 an RTL-to-GDS flow using open-source tools. Next, Google partnered with 
@@ -130,7 +143,7 @@ the absence of an open-source toolflow.
 - [PR](https://www.businesswire.com/news/home/20210406005366/en/First-Google-Sponsored-MPW-Shuttle-Launched-at-SkyWater-with-40-Open-Source-Community-Submitted-Designs)
 
 
-## SVEditor - An Eclipse Plug-in for Developing SystemVerilog
+## SVEditor - A SystemVerilog Eclipse Plug-in
 
 **Stage:** Production / Archived
 
