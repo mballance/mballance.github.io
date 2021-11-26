@@ -42,8 +42,8 @@ variety of software debuggers.
 I enjoy writing about the work I'm doing, and presenting 
 at conferences. You can find a list of publications [here](publications.html). 
 
-I maintain a blog for my [personal projects](https://bitsbytesgates.blogspot.com/). 
-This is where I write about new things I'm exploring, and enhancements
+I maintain a [blog for my personal projects](https://bitsbytesgates.blogspot.com/)
+where I write about new things I'm exploring, and enhancements
 I'm making to the various side projects that I work on. 
 
 ## Personal Projects
@@ -54,63 +54,8 @@ find that projects are the perfect way for me to learn. Given my
 interest in hardware/gateware and functional verification, 
 my projects, unsurprisingly, focus on this space. 
 
+[Learn more here](projects.html)
 
-### SVEditor - An Eclipse Plug-in for Developing SystemVerilog
-
-#### Resources
-- [website](https://sites.google.com/site/svedvkit)
-- [github](https://github.com/sveditor/sveditor)
-
-### PyBFMs - Bus-Functional Models for Python
-
-#### Resources
-- [github](https://github.com/pybfms)
-
-### Featherweight-IP
-
-#### Resources
-- [github](https://github.com/featherweight-ip)
-
-### IVPM - IP and Verification Package Manager
-Design and Verification IP comes from many sources. While it 
-would be nice to think of reusable IP as being 'complete' and
-'read-only', in practice I often find myself co-developing
-projects. IVPM manages fetching project dependencies from a
-variety of sources (but with a focus on Git repositories) and
-creating a project-local set of package dependencies. 
-
-#### Key Features
-- Integration with SVE
-
-#### Resources
-- [github](https://github.com/fvutils/ipvm)
-
-### PyVSC - Constraints and Coverage in Python
-Python has been used for functional verification for quite 
-some time. When I began using Python, one thing I missed
-from SystemVerilog was access to SystemVerilog-style 
-constraints and functional coverage. PyVSC provides a
-Python library that supports constrained randomization
-and functional coverage collection.
-
-#### Resources
-- [readthedocs](https://pyvsc.readthedocs.io/en/latest/)
-- [github](https://github.com/fvutils/pyvsc)
-
-### MKDV - Job Runner for Functional Verification
-
-
-#### Key Features
-- Support for SLURM and LSF
-- Integration with Allure
-- 
-
-#### Resources
-- [github](https://github.com/fvutils/mkdv)
-
-## Articles, Papers, and Blog Posts
-
-TBD
 
 
 
