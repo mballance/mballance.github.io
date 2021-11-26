@@ -29,7 +29,7 @@ and functional coverage collection.
 
 **Stage:** Beta
 
-<img src="images/RISCV-DV_Coverage.PNG" height="240"/>
+<img src="images/RISCV-DV_Coverage.PNG" height="480"/>
 
 #### Resources
 - [github](https://github.com/fvutils/pyucis-viewer)
@@ -78,7 +78,7 @@ creating a project-local set of package dependencies.
 
 ### MKDV - Job Runner for Functional Verification
 
-<img src="images/AllureRegression.png" height="240"/>
+<img src="images/AllureRegression.png" height="360"/>
 
 #### Key Features
 - YAML-based specification of job configurations
@@ -110,9 +110,9 @@ validate the flow.
 I participated in the first tapeout with a very simple SoC design. 
 The design and testbench environment are shown below.
 
-<img src="images/fwpayload_tb_diagram.png" height="240"/>
+<img src="images/fwpayload_tb_diagram.png" height="360"/>
 
-<img src="images/FWPayload_rot.PNG" height="240"/>
+<img src="images/FWPayload_rot.PNG" height="360"/>
 
 Learning about the tools and key considerations across the entire
 process was extremely educational -- and, self-education process I
