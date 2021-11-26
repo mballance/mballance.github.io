@@ -45,7 +45,10 @@ and functional coverage collection.
 
 ### Bare-Metal Kernel
 
-**Stage:** Alpha
+**Stage:** Alpha/Archived
+
+#### Resources
+- [github](https://github.com/mballance/bmk)
 
 ### Zephyr-Cosim
 
@@ -61,6 +64,10 @@ and functional coverage collection.
 - [github](https://github.com/featherweight-ip)
 
 ## Functional Verification Infrastructure
+
+### PyBFMs - Bus-Functional Models for Python
+
+### TbLink RPC
 
 ### IVPM - IP and Verification Package Manager
 Design and Verification IP comes from many sources. While it 
@@ -90,12 +97,10 @@ creating a project-local set of package dependencies.
 - [github](https://github.com/fvutils/mkdv)
 
 
-### PyBFMs - Bus-Functional Models for Python
-
 ### Resources
 - [github](https://github.com/pybfms)
 
-## eFabless/Google Multi-Project Wafer (MPW) Shuttle
+## eFabless/Google Multi-Project Wafer (MPW) Shuttle (2020)
 Taping out a chip was a long-term dream, and one that seemed unlikely
 to be realized given the difficulty and expense of doing so. A few 
 developments in the industry brought this dream within reach. 
@@ -127,7 +132,9 @@ the absence of an open-source toolflow.
 
 ## SVEditor - An Eclipse Plug-in for Developing SystemVerilog
 
-**Stage:** Production
+**Stage:** Production / Archived
+
+<img src="images/SVEditor.git"/>
 
 ### Resources
 - [website](https://sites.google.com/site/svedvkit)
