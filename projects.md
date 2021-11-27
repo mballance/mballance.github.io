@@ -2,6 +2,7 @@
 
 ## Random Test Generation, Solvers, and Functional Coverage
 
+
 ### PyVSC - Constraints and Coverage in Python
 
 **Stage:** Production
@@ -28,6 +29,15 @@ random RISC-V test programs.
 
 **Stage:** Production
 
+Once collected, functional coverage data must be stored in an accessible
+manner to support analysis. [Accellera UCIS](https://www.accellera.org/downloads/standards/ucis)
+defines an API for storing and retrieving coverage data, as well as an
+XML interchange format. 
+PyUCIS is an object-oriented Python API on top of the UCIS API that can 
+be used to store and access coverage data. Supported back-end implementations
+include commercial tool implementations of the UCIS API, the XML 
+interchange format, and an in-memory representation.
+
 #### Resources
 - [github](https://github.com/pyucis)
 - [Accellera UCIS](https://www.accellera.org/downloads/standards/ucis)
@@ -35,6 +45,10 @@ random RISC-V test programs.
 ### PyUCIS-Viewer
 
 **Stage:** Beta
+
+Interactive graphical applications make getting an intuitive sense of
+coverage data simpler. PyUCIS Viewer is a Python application that 
+uses the [QT](https://www.qt.io) library to render coverage data.
 
 <img src="images/RISCV-DV_Coverage.PNG" height="480"/>
 
@@ -45,8 +59,18 @@ random RISC-V test programs.
 
 **Stage:** Development
 
+The PyVSC library uses the [Boolector](https://github.com/boolector/boolector)
+SMT solver to implement SAT solving. Additional algorithms are needed to
+implement iterative constraint (ie foreach) expansion, constraint partitioning, 
+and uniform randomization. While Python is great as a front-end interface
+for the user, it doesn't excel at high-performance computing.
+
+libvsc is a new implementation in C++ of the core data model, 
+coverage collection, and randomization algorithms. Early measurements indicate
+that libvsc is roughly twice as fast as PyVSC.
+
 #### Resources
-- [github](https://github.com/fvutils/libucis)
+- [github](https://github.com/fvutils/libvsc)
 
 ## Software-Driven Functional Verification
 

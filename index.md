@@ -4,19 +4,19 @@
 
 ## Professional Life
 
-I am a Product Engineer working in the Electronic Design 
+I work as a Product Engineer in the Electronic Design 
 Automation (EDA) field, with a focus on the front-end of the 
 design and verification process.
 
-Currently, I work on standardization of the 
+My current focus is on standardization of the 
 [Accellera Portable Stimulus Standard](https://www.accellera.org/activities/working-groups/portable-stimulus)
-verification language, and with my employer's implementation
+verification language, and my employer's implementation
 of that standard. The Portable Stimulus Specification (PSS) is
 a model-based capture of test intent that enables automated 
 generation of random scenario-level tests. While there are 
 many potential applications for such tests, a key target is
-creation of SoC-level tests for verifying proper integration,
-performance, and power.
+creation of software-driven SoC-level tests for verifying 
+proper integration, performance, and power.
 
 Prior to working as a product engineer on Portable Stimulus,
 I was the lead developer for a Virtual Platform tool. 
@@ -40,7 +40,7 @@ variety of software debuggers.
 
 ## Publications
 I enjoy writing about the work I'm doing, and presenting 
-at conferences. You can find a list of publications [here](publications.html). 
+at conferences. You can find a [list of publications here](publications.html). 
 
 I maintain a [blog for my personal projects](https://bitsbytesgates.blogspot.com/)
 where I write about new things I'm exploring, and enhancements
