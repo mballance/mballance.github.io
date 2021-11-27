@@ -1,6 +1,6 @@
 # Open-Source Projects
 
-## Random Test Generation, Solvers, and Functional Coverage
+## Random Generation, Solvers, and Functional Coverage
 
 
 ### PyVSC - Constraints and Coverage in Python
@@ -61,11 +61,11 @@ uses the [QT](https://www.qt.io) library to render coverage data.
 
 The PyVSC library uses the [Boolector](https://github.com/boolector/boolector)
 SMT solver to implement SAT solving. Additional algorithms are needed to
-implement iterative constraint (ie foreach) expansion, constraint partitioning, 
+implement iterative constraint (eg foreach) expansion, constraint partitioning, 
 and uniform randomization. While Python is great as a front-end interface
-for the user, it doesn't excel at high-performance computing.
+for the user, it doesn't excel at high-performance computation.
 
-libvsc is a new implementation in C++ of the core data model, 
+libvsc is a new C++ implementation of the core data model, 
 coverage collection, and randomization algorithms. Early measurements indicate
 that libvsc is roughly twice as fast as PyVSC.
 
@@ -74,7 +74,8 @@ that libvsc is roughly twice as fast as PyVSC.
 
 ## Software-Driven Functional Verification
 Software-driven verification, and the techniques surrounding it, 
-have been a continuing interest of mine. 
+have been a continuing interest of mine. The projects below help to
+make software-driven verification simpler and more productive.
 
 ### Bare-Metal Kernel
 
@@ -151,16 +152,34 @@ to configure the software image. However, the description captured in the
 allows users to extract data from a DeviceTree Specification and use it 
 to generate artifacts used in the verification environment, documentation, etc.
 
-## Featherweight-IP
-
-### Resources
-- [github](https://github.com/featherweight-ip)
-
 ## Functional Verification Infrastructure
 
 ### PyBFMs - Bus-Functional Models for Python
 
+### Resources
+- [github](https://github.com/pybfms)
+
 ### TbLink RPC
+
+**Stage:** Development
+
+Design verification in simulation is typically performed on
+a Verilog, VHDL, or SystemC representation. Connecting to
+outside code -- testbench, reference model, checkers, etc --
+is a key aspect of a verification environment. Unfortunately,
+the integration APIs provided by various simulation environments
+are different, and have different capabilities. Furthermore,
+some of the code being integrated may support running in a thread,
+but might require running as a separate process.
+
+The goal of the TbLink-RPC is to implement a simulation-aware
+integration API and code generation that simplifies the process
+of connecting a new testbench/checker/etc to a simulation-based
+or hardware-assisted verification environment.
+
+#### Resources
+- [Introduction](https://tblink-rpc.github.io)
+- [github](https://github.com/tblink-rpc)
 
 ### IVPM - IP and Verification Package Manager
 Design and Verification IP comes from many sources. While it 
@@ -186,14 +205,11 @@ creating a project-local set of package dependencies.
 - YAML-based specification of job configurations
 - Support for running parallel jobs locally or via [Slurm Workload Manager](https://slurm.schedmd.com/documentation.html)
 - Integration with [Allure](https://docs.qameta.io/allure/) for reports
-
+- Support for IP packaged using [FuseSoC](https://fusesoc.readthedocs.io) meta-data.
 
 ### Resources
 - [github](https://github.com/fvutils/mkdv)
 
-
-### Resources
-- [github](https://github.com/pybfms)
 
 ## eFabless/Google Multi-Project Wafer (MPW)
 
@@ -235,10 +251,12 @@ the absence of an open-source toolflow.
 
 <img src="images/SVEditor.gif"/>
 
-In 2008 when I started learning SystemVerilog in 2008, I had spent 
-several years writing software using [Eclipse](https://eclipse.org).
+In 2008, when I started learning SystemVerilog, I had spent 
+several years writing software using the [Eclipse](https://eclipse.org)
+integrated development environment.
 My experience was that the language-support features Eclipse provided
-for Java and C/C++ made me significantly more productive, and I found
+for Java and C/C++ made me significantly more productive vs using a
+plain-text editor like Emacs or Vi, and I found
 myself missing that when writing SystemVerilog.
 
 SVEditor indexes a user-specified list of Verilog and SystemVerilog
