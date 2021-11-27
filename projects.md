@@ -73,10 +73,25 @@ that libvsc is roughly twice as fast as PyVSC.
 - [github](https://github.com/fvutils/libvsc)
 
 ## Software-Driven Functional Verification
+Software-driven verification, and the techniques surrounding it, 
+have been a continuing interest of mine. 
 
 ### Bare-Metal Kernel
 
 **Stage:** Alpha/Archived
+
+The goal of bare-metal software is to have maximum control of the
+hardware. Bare-metal software still benefits from light-weight
+infrastructure and services that help to make test writing more
+productive. 
+The Bare-Metal Kernel implements multi-core bring-up and threaded
+execution environment. Synchronization primitives are provided
+that support synchronization across hardware threads and 
+cooperatively-scheduled software threads.
+
+The BMK project worked for the use cases it was intended to 
+support. However, going forward, I've decided to invest in 
+supporting these use cases using the Zephyr RTOS kernel.
 
 #### Resources
 - [github](https://github.com/mballance/bmk)
@@ -85,9 +100,56 @@ that libvsc is roughly twice as fast as PyVSC.
 
 **Stage:** Alpha
 
+<img src="images/zephyr_cosim.png" height="480"/>
+
+A key challenge in SoC integration testing is obtaining 
+and integrating driver firmware for use by the integration tests.
+The Zephyr-Cosim project helps to address these challenges by making
+it easy to develop driver firmware in the context of an IP-level
+verification environment. Because the driver firmware is developed
+using the Zephyr RTOS driver framework, it integrates easily
+with driver firmware for other IPs in the SoC environment.
+
+#### Resources
+- [github](https://github.com/zephyr-dv/zephyr-cosim)
+
 ### Zephyr DV Patches
 
+**Stage:** Planning
+
+The Zephyr RTOS implementation is tuned for running embedded application
+software on resource-constrained hardware platforms. Test software
+has similar requirements, but there are also differences. These patches
+are intended to better-support software-driven verification in 
+simulation and hardware-assisted execution environments.
+
+- **Per-Core Scheduler** -- Zephyr's support for multi-core preemptively 
+schedules threads on cores as they become available. This is good for 
+application software, but software-driven tests need to take full
+control over each core. The per-core scheduler patch will support this
+verification-centric scheduler model.
+- **Pre-Initialized RAM** -- Zephyr is designed to be run in environments
+where code must assume that RAM is uninitialized. In verification 
+environments, RAM is often initialized when loading the software image.
+Skipping RAM initialization saves a non-insignificant amount of 
+simulation time, focusing more simulation time on the actual test.
+- **Semi-Host Printk** -- Displaying messages from the running test
+is an important debug mechansim. Unfortunately, formatting and displaying 
+messages (often via a serial link) is very time-consuming. Especially 
+in simulation environments, much of the work of message formatting
+and display can be handled by the testbench. This patch will enable
+Zephyr to be configured to take advantage of this support.
+
+
 ### Zephyr DTS Tools
+
+**Stage:** Development
+
+The Zephyr RTOS uses the [DeviceTree Specification](https://www.devicetree.org)
+to configure the software image. However, the description captured in the 
+.dts file can be used in other ways as well. The DTS Tools project
+allows users to extract data from a DeviceTree Specification and use it 
+to generate artifacts used in the verification environment, documentation, etc.
 
 ## Featherweight-IP
 
@@ -173,12 +235,24 @@ the absence of an open-source toolflow.
 
 <img src="images/SVEditor.gif"/>
 
+In 2008 when I started learning SystemVerilog in 2008, I had spent 
+several years writing software using [Eclipse](https://eclipse.org).
+My experience was that the language-support features Eclipse provided
+for Java and C/C++ made me significantly more productive, and I found
+myself missing that when writing SystemVerilog.
+
+SVEditor indexes a user-specified list of Verilog and SystemVerilog
+files, and uses the extracted symbols to support navigation across
+the codebase, context-specific content assist, and to automate 
+creation of code.
+
+SVEditor is no longer being actively developed, but I continue to
+use it almost any time I write Verilog/SystemVerilog code.
+
+
 ### Resources
 - [website](https://sites.google.com/site/svedvkit)
 - [github](https://github.com/sveditor/sveditor)
-
-
-
 
 
 
