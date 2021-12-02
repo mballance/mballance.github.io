@@ -234,7 +234,7 @@ The design and testbench environment are shown below.
 
 <img src="images/FWPayload_rot.PNG" height="360"/>
 
-[ ![](images/FWPayload_rot.PNG)](images/FWPayload_rot.PNG)
+[ ![](images/FWPayload_rot_346x240.PNG)](images/FWPayload_rot.PNG)
 
 Learning about the tools and key considerations across the entire
 process was extremely educational -- and, self-education process I
