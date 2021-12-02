@@ -54,7 +54,9 @@ find that projects are the perfect way for me to learn. Given my
 interest in hardware/gateware and functional verification, 
 my projects, unsurprisingly, focus on this space. 
 
-[Learn more here](projects.html)
+See more detail about key projects [here](projects.html).
+
+Check out my GitHub profile [here](https://github.com/mballance).
 
 
 

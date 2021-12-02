@@ -16,8 +16,8 @@ and functional coverage collection.
 
 *Note:* PyVSC is used for constraint solving and collecting
 functional coverage by the Python implementation of the
-Google-developed RISCV-DV package. RISCV-DV generates 
-random RISC-V test programs.
+Google-developed [RISCV-DV](https://github.com/google/riscv-dv) 
+package. RISCV-DV generates random RISC-V test programs.
 
 #### Resources
 - [readthedocs](https://pyvsc.readthedocs.io/en/latest/)
@@ -233,6 +233,8 @@ The design and testbench environment are shown below.
 <img src="images/fwpayload_tb_diagram.png" height="360"/>
 
 <img src="images/FWPayload_rot.PNG" height="360"/>
+
+[ ![](images/FWPayload_rot.PNG)](images/FWPayload_rot.PNG)
 
 Learning about the tools and key considerations across the entire
 process was extremely educational -- and, self-education process I
