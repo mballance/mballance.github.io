@@ -14,16 +14,10 @@ constraints and functional coverage. PyVSC provides a
 Python library that supports constrained randomization
 and functional coverage collection.
 
-*Note:* PyVSC is used for constraint solving and collecting
-functional coverage by the Python implementation of the
-Google-developed [RISCV-DV](https://github.com/google/riscv-dv) 
-package. RISCV-DV generates random RISC-V test programs.
-
 #### Resources
 - [readthedocs](https://pyvsc.readthedocs.io/en/latest/)
 - [github](https://github.com/fvutils/pyvsc)
 - [WOSET Paper](publications/2020_WOEST_SvStyle_Constraints_Coverage_in_Python.pdf)
-- [RISCV-DV](https://github.com/google/riscv-dv)
 
 ### PyUCIS
 
@@ -50,7 +44,7 @@ Interactive graphical applications make getting an intuitive sense of
 coverage data simpler. PyUCIS Viewer is a Python application that 
 uses the [QT](https://www.qt.io) library to render coverage data.
 
-<img src="images/RISCV-DV_Coverage.PNG" height="480"/>
+[ ![](images/RISCV-DV_Coverage_297x240.PNG)](images/RISCV-DV_Coverage.PNG)
 
 #### Resources
 - [github](https://github.com/fvutils/pyucis-viewer)
@@ -101,7 +95,7 @@ supporting these use cases using the Zephyr RTOS kernel.
 
 **Stage:** Alpha
 
-<img src="images/zephyr_cosim.png" height="480"/>
+[ ![](images/zephyr_cosim_248x240.png)](images/zephyr_cosim.png)
 
 A key challenge in SoC integration testing is obtaining 
 and integrating driver firmware for use by the integration tests.
@@ -154,11 +148,6 @@ to generate artifacts used in the verification environment, documentation, etc.
 
 ## Functional Verification Infrastructure
 
-### PyBFMs - Bus-Functional Models for Python
-
-### Resources
-- [github](https://github.com/pybfms)
-
 ### TbLink RPC
 
 **Stage:** Development
@@ -170,10 +159,10 @@ is a key aspect of a verification environment. Unfortunately,
 the integration APIs provided by various simulation environments
 are different, and have different capabilities. Furthermore,
 some of the code being integrated may support running in a thread,
-but might require running as a separate process.
+but might also require running as a separate process.
 
-The goal of the TbLink-RPC is to implement a simulation-aware
-integration API and code generation that simplifies the process
+The goal of TbLink-RPC is to implement a simulation-aware
+integration API and code generation tools that simplify the process
 of connecting a new testbench/checker/etc to a simulation-based
 or hardware-assisted verification environment.
 
@@ -190,7 +179,7 @@ variety of sources (but with a focus on Git repositories) and
 creating a project-local set of package dependencies. 
 
 #### Key Features
-- Integration with SVE
+- Integration with [SVEditor](#sveditor---a-systemverilog-eclipse-plug-in)
 
 #### Resources
 - [github](https://github.com/fvutils/ipvm)
@@ -199,7 +188,7 @@ creating a project-local set of package dependencies.
 
 **Stage:** Beta / Internal Production
 
-<img src="images/AllureRegression.png" height="360"/>
+[ ![](images/AllureRegression_466x240.png)](images/AllureRegression.png)
 
 #### Key Features
 - YAML-based specification of job configurations
@@ -230,13 +219,13 @@ validate the flow.
 I participated in the first tapeout with a very simple SoC design. 
 The design and testbench environment are shown below.
 
-[ ![](images/fwpayload_tb_diagram_391x240.pn)](images/fwpayload_tb_diagram.png)
+[ ![](images/fwpayload_tb_diagram_391x240.png)](images/fwpayload_tb_diagram.png)
 
 [ ![](images/FWPayload_rot_346x240.PNG)](images/FWPayload_rot.PNG)
 
 Learning about the tools and key considerations across the entire
-process was extremely educational -- and, self-education process I
-would have been unlikely to undertake as a personal project in 
+process was extremely educational -- and, a learning project that
+I would have been unlikely to undertake as a personal project in 
 the absence of an open-source toolflow.
 
 
@@ -265,7 +254,7 @@ the codebase, context-specific content assist, and to automate
 creation of code.
 
 SVEditor is no longer being actively developed, but I continue to
-use it almost any time I write Verilog/SystemVerilog code.
+use it almost any time I write Verilog and SystemVerilog code.
 
 
 ### Resources
