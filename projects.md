@@ -230,9 +230,7 @@ validate the flow.
 I participated in the first tapeout with a very simple SoC design. 
 The design and testbench environment are shown below.
 
-<img src="images/fwpayload_tb_diagram.png" height="360"/>
-
-<img src="images/FWPayload_rot.PNG" height="360"/>
+[ ![](images/fwpayload_tb_diagram_391x240.pn)](images/fwpayload_tb_diagram.png)
 
 [ ![](images/FWPayload_rot_346x240.PNG)](images/FWPayload_rot.PNG)
 
@@ -251,7 +249,7 @@ the absence of an open-source toolflow.
 
 **Stage:** Production / Archived
 
-<img src="images/SVEditor.gif"/>
+[ ![](images/SVEditor_456x480.gif)](images/SVEditor.gif)
 
 In 2008, when I started learning SystemVerilog, I had spent 
 several years writing software using the [Eclipse](https://eclipse.org)
