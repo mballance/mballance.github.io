@@ -199,6 +199,33 @@ creating a project-local set of package dependencies.
 ### Resources
 - [github](https://github.com/fvutils/mkdv)
 
+## Featherweight-IP Library
+
+**Stage:** Development / Internal Production
+
+The [Featherweight-IP Library](https://github.com/featherweight-up) contains 
+the open-source IP library I use when assembling SoCs. I've designed 
+some of the IPs, such as the [FWRisc](https://github.com/Featherweight-IP/fwrisc) 
+RISC-V core that won 2nd place in the 
+[RISC-V Soft CPU Design Contest](https://riscv.org/2019/10/announcing-the-winners-of-the-risc-v-soft-cpu-contest/) and
+various infrastructure components such as interconnects and system controllers. Other
+IP blocks leverage existing open-source IPs. The README for any IP that leverages 
+a pre-existing block clearly states the origin of the foundational IP block.
+
+## Key Features
+- *Common Bus-Interface Definitions* - Many IPs use standard bus interface protocols,
+but using different naming schemes for signals and different conventions in cases 
+where multiple interfaces share some signals. IPs in the Featherweight-IP library
+use the same interface definitions, enabling IPs to be connected to the design
+a the interface level instead of the signal level
+- *Test-bed for Embedded-Debug* - Several of the IPs have been updated to include
+[IP-integrated debug instrumentation](https://bitsbytesgates.blogspot.com/2021/02/soc-integration-testing-ip-integrated.html),
+which simplifies system-level debug by exposing the IP's operating state at a
+high level.
+
+
+### Resources
+- [github](https://github.com/featherweight-ip)
 
 ## eFabless/Google Multi-Project Wafer (MPW)
 
