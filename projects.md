@@ -213,12 +213,12 @@ IP blocks leverage existing open-source IPs. The README for any IP that leverage
 a pre-existing block clearly states the origin of the foundational IP block.
 
 ## Key Features
-- *Common Bus-Interface Definitions* - Many IPs use standard bus interface protocols,
+- **Common Bus-Interface Definitions** - Many IPs use standard bus interface protocols,
 but using different naming schemes for signals and different conventions in cases 
 where multiple interfaces share some signals. IPs in the Featherweight-IP library
 use the same interface definitions, enabling IPs to be connected to the design
 a the interface level instead of the signal level
-- *Test-bed for Embedded-Debug* - Several of the IPs have been updated to include
+- **Test-bed for Embedded-Debug** - Several of the IPs have been updated to include
 [IP-integrated debug instrumentation](https://bitsbytesgates.blogspot.com/2021/02/soc-integration-testing-ip-integrated.html),
 which simplifies system-level debug by exposing the IP's operating state at a
 high level.
