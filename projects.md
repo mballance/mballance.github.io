@@ -250,6 +250,8 @@ The design and testbench environment are shown below.
 
 [ ![](images/FWPayload_rot_346x240.PNG)](images/FWPayload_rot.PNG)
 
+[ ![](images/open_mpw1_1.91_458x240.png)](images/open_mpw1_1.91.png)
+
 Learning about the tools and key considerations across the entire
 process was extremely educational -- and, a learning project that
 I would have been unlikely to undertake as a personal project in 
