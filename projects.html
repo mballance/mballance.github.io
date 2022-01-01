@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+    
+      Projects &middot; Matthew Ballance
+    
+  </title>
+
+  
+  <link rel="canonical" href="projects.html">
+  
+
+  <link rel="stylesheet" href="public/css/poole.css">
+  <link rel="stylesheet" href="public/css/syntax.css">
+  <link rel="stylesheet" href="public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="atom.xml">
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'G-D4CQR7PB0Z', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="index.html">Home</a>
+
+    
+    <a class="sidebar-nav-item" href="http://bitsbytesgates.blogspot.com">Blog</a>
+
+    
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item active" href="projects.html">Projects</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="publications.html">Publications</a>
+        
+      
+    
+
+    <a class="sidebar-nav-item" href="http://github.com/mballance">GitHub</a>
+    <!--
+    <span class="sidebar-nav-item">Currently v</span>
+      -->
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2022. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="./" title="Home">Matthew Ballance</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="page">
+  <h1 class="page-title">Projects</h1>
+  <h2 id="random-generation-solvers-and-functional-coverage">Random Generation, Solvers, and Functional Coverage</h2>
+
+<h3 id="pyvsc---constraints-and-coverage-in-python">PyVSC - Constraints and Coverage in Python</h3>
+
+<p><strong>Stage:</strong> Production</p>
+
+<p>Python has been used for functional verification for quite 
+some time. When I began using Python, one thing I missed
+from SystemVerilog was access to SystemVerilog-style 
+constraints and functional coverage. PyVSC provides a
+Python library that supports constrained randomization
+and functional coverage collection.</p>
+
+<h4 id="resources">Resources</h4>
+<ul>
+  <li><a href="https://pyvsc.readthedocs.io/en/latest/">readthedocs</a></li>
+  <li><a href="https://github.com/fvutils/pyvsc">github</a></li>
+  <li><a href="publications/2020_WOEST_SvStyle_Constraints_Coverage_in_Python.pdf">WOSET Paper</a></li>
+</ul>
+
+<h3 id="pyucis">PyUCIS</h3>
+
+<p><strong>Stage:</strong> Production</p>
+
+<p>Once collected, functional coverage data must be stored in an accessible
+manner to support analysis. <a href="https://www.accellera.org/downloads/standards/ucis">Accellera UCIS</a>
+defines an API for storing and retrieving coverage data, as well as an
+XML interchange format. 
+PyUCIS is an object-oriented Python API on top of the UCIS API that can 
+be used to store and access coverage data. Supported back-end implementations
+include commercial tool implementations of the UCIS API, the XML 
+interchange format, and an in-memory representation.</p>
+
+<h4 id="resources-1">Resources</h4>
+<ul>
+  <li><a href="https://github.com/pyucis">github</a></li>
+  <li><a href="https://www.accellera.org/downloads/standards/ucis">Accellera UCIS</a></li>
+</ul>
+
+<h3 id="pyucis-viewer">PyUCIS-Viewer</h3>
+
+<p><strong>Stage:</strong> Beta</p>
+
+<p>Interactive graphical applications make getting an intuitive sense of
+coverage data simpler. PyUCIS Viewer is a Python application that 
+uses the <a href="https://www.qt.io">QT</a> library to render coverage data.</p>
+
+<p><a href="images/RISCV-DV_Coverage.PNG"> <img src="images/RISCV-DV_Coverage_297x240.PNG" alt="" /></a></p>
+
+<h4 id="resources-2">Resources</h4>
+<ul>
+  <li><a href="https://github.com/fvutils/pyucis-viewer">github</a></li>
+</ul>
+
+<h3 id="libvsc">libvsc</h3>
+
+<p><strong>Stage:</strong> Development</p>
+
+<p>The PyVSC library uses the <a href="https://github.com/boolector/boolector">Boolector</a>
+SMT solver to implement SAT solving. Additional algorithms are needed to
+implement iterative constraint (eg foreach) expansion, constraint partitioning, 
+and uniform randomization. While Python is great as a front-end interface
+for the user, it doesn’t excel at high-performance computation.</p>
+
+<p>libvsc is a new C++ implementation of the core data model, 
+coverage collection, and randomization algorithms. Early measurements indicate
+that libvsc is roughly twice as fast as PyVSC.</p>
+
+<h4 id="resources-3">Resources</h4>
+<ul>
+  <li><a href="https://github.com/fvutils/libvsc">github</a></li>
+</ul>
+
+<h2 id="software-driven-functional-verification">Software-Driven Functional Verification</h2>
+<p>Software-driven verification, and the techniques surrounding it, 
+have been a continuing interest of mine. The projects below help to
+make software-driven verification simpler and more productive.</p>
+
+<h3 id="bare-metal-kernel">Bare-Metal Kernel</h3>
+
+<p><strong>Stage:</strong> Alpha/Archived</p>
+
+<p>The goal of bare-metal software is to have maximum control of the
+hardware. Bare-metal software still benefits from light-weight
+infrastructure and services that help to make test writing more
+productive. 
+The Bare-Metal Kernel implements multi-core bring-up and threaded
+execution environment. Synchronization primitives are provided
+that support synchronization across hardware threads and 
+cooperatively-scheduled software threads.</p>
+
+<p>The BMK project worked for the use cases it was intended to 
+support. However, going forward, I’ve decided to invest in 
+supporting these use cases using the Zephyr RTOS kernel.</p>
+
+<h4 id="resources-4">Resources</h4>
+<ul>
+  <li><a href="https://github.com/mballance/bmk">github</a></li>
+</ul>
+
+<h3 id="zephyr-cosim">Zephyr-Cosim</h3>
+
+<p><strong>Stage:</strong> Alpha</p>
+
+<p><a href="images/zephyr_cosim.png"> <img src="images/zephyr_cosim_248x240.png" alt="" /></a></p>
+
+<p>A key challenge in SoC integration testing is obtaining 
+and integrating driver firmware for use by the integration tests.
+The Zephyr-Cosim project helps to address these challenges by making
+it easy to develop driver firmware in the context of an IP-level
+verification environment. Because the driver firmware is developed
+using the Zephyr RTOS driver framework, it integrates easily
+with driver firmware for other IPs in the SoC environment.</p>
+
+<h4 id="resources-5">Resources</h4>
+<ul>
+  <li><a href="https://github.com/zephyr-dv/zephyr-cosim">github</a></li>
+</ul>
+
+<h3 id="zephyr-dv-patches">Zephyr DV Patches</h3>
+
+<p><strong>Stage:</strong> Planning</p>
+
+<p>The Zephyr RTOS implementation is tuned for running embedded application
+software on resource-constrained hardware platforms. Test software
+has similar requirements, but there are also differences. These patches
+are intended to better-support software-driven verification in 
+simulation and hardware-assisted execution environments.</p>
+
+<ul>
+  <li><strong>Per-Core Scheduler</strong> – Zephyr’s support for multi-core preemptively 
+schedules threads on cores as they become available. This is good for 
+application software, but software-driven tests need to take full
+control over each core. The per-core scheduler patch will support this
+verification-centric scheduler model.</li>
+  <li><strong>Pre-Initialized RAM</strong> – Zephyr is designed to be run in environments
+where code must assume that RAM is uninitialized. In verification 
+environments, RAM is often initialized when loading the software image.
+Skipping RAM initialization saves a non-insignificant amount of 
+simulation time, focusing more simulation time on the actual test.</li>
+  <li><strong>Semi-Host Printk</strong> – Displaying messages from the running test
+is an important debug mechansim. Unfortunately, formatting and displaying 
+messages (often via a serial link) is very time-consuming. Especially 
+in simulation environments, much of the work of message formatting
+and display can be handled by the testbench. This patch will enable
+Zephyr to be configured to take advantage of this support.</li>
+</ul>
+
+<h3 id="zephyr-dts-tools">Zephyr DTS Tools</h3>
+
+<p><strong>Stage:</strong> Development</p>
+
+<p>The Zephyr RTOS uses the <a href="https://www.devicetree.org">DeviceTree Specification</a>
+to configure the software image. However, the description captured in the 
+.dts file can be used in other ways as well. The DTS Tools project
+allows users to extract data from a DeviceTree Specification and use it 
+to generate artifacts used in the verification environment, documentation, etc.</p>
+
+<h2 id="functional-verification-infrastructure">Functional Verification Infrastructure</h2>
+
+<h3 id="tblink-rpc">TbLink RPC</h3>
+
+<p><strong>Stage:</strong> Development</p>
+
+<p>Design verification in simulation is typically performed on
+a Verilog, VHDL, or SystemC representation. Connecting to
+outside code – testbench, reference model, checkers, etc –
+is a key aspect of a verification environment. Unfortunately,
+the integration APIs provided by various simulation environments
+are different, and have different capabilities. Furthermore,
+some of the code being integrated may support running in a thread,
+but might also require running as a separate process.</p>
+
+<p>The goal of TbLink-RPC is to implement a simulation-aware
+integration API and code generation tools that simplify the process
+of connecting a new testbench/checker/etc to a simulation-based
+or hardware-assisted verification environment.</p>
+
+<h4 id="resources-6">Resources</h4>
+<ul>
+  <li><a href="https://tblink-rpc.github.io">Introduction</a></li>
+  <li><a href="https://github.com/tblink-rpc">github</a></li>
+</ul>
+
+<h3 id="ivpm---ip-and-verification-package-manager">IVPM - IP and Verification Package Manager</h3>
+<p>Design and Verification IP comes from many sources. While it 
+would be nice to think of reusable IP as being ‘complete’ and
+‘read-only’, in practice I often find myself co-developing
+projects. IVPM manages fetching project dependencies from a
+variety of sources (but with a focus on Git repositories) and
+creating a project-local set of package dependencies.</p>
+
+<h4 id="key-features">Key Features</h4>
+<ul>
+  <li>Integration with <a href="#sveditor---a-systemverilog-eclipse-plug-in">SVEditor</a></li>
+</ul>
+
+<h4 id="resources-7">Resources</h4>
+<ul>
+  <li><a href="https://github.com/fvutils/ipvm">github</a></li>
+</ul>
+
+<h3 id="mkdv---job-runner-for-functional-verification">MKDV - Job Runner for Functional Verification</h3>
+
+<p><strong>Stage:</strong> Beta / Internal Production</p>
+
+<p><a href="images/AllureRegression.png"> <img src="images/AllureRegression_466x240.png" alt="" /></a></p>
+
+<h4 id="key-features-1">Key Features</h4>
+<ul>
+  <li>YAML-based specification of job configurations</li>
+  <li>Support for running parallel jobs locally or via <a href="https://slurm.schedmd.com/documentation.html">Slurm Workload Manager</a></li>
+  <li>Integration with <a href="https://docs.qameta.io/allure/">Allure</a> for reports</li>
+  <li>Support for IP packaged using <a href="https://fusesoc.readthedocs.io">FuseSoC</a> meta-data.</li>
+</ul>
+
+<h3 id="resources-8">Resources</h3>
+<ul>
+  <li><a href="https://github.com/fvutils/mkdv">github</a></li>
+</ul>
+
+<h2 id="featherweight-ip-library">Featherweight-IP Library</h2>
+
+<p><strong>Stage:</strong> Development / Internal Production</p>
+
+<p>The <a href="https://github.com/featherweight-up">Featherweight-IP Library</a> contains 
+the open-source IP library I use when assembling SoCs. I’ve designed 
+some of the IPs, such as the <a href="https://github.com/Featherweight-IP/fwrisc">FWRisc</a> 
+RISC-V core that won 2nd place in the 
+<a href="https://riscv.org/2019/10/announcing-the-winners-of-the-risc-v-soft-cpu-contest/">RISC-V Soft CPU Design Contest</a> and
+various infrastructure components such as interconnects and system controllers. Other
+IP blocks leverage existing open-source IPs. The README for any IP that leverages 
+a pre-existing block clearly states the origin of the foundational IP block.</p>
+
+<h2 id="key-features-2">Key Features</h2>
+<ul>
+  <li><strong>Common Bus-Interface Definitions</strong> - Many IPs use standard bus interface protocols,
+but using different naming schemes for signals and different conventions in cases 
+where multiple interfaces share some signals. IPs in the Featherweight-IP library
+use the same interface definitions, enabling IPs to be connected to the design
+a the interface level instead of the signal level</li>
+  <li><strong>Test-bed for Embedded-Debug</strong> - Several of the IPs have been updated to include
+<a href="https://bitsbytesgates.blogspot.com/2021/02/soc-integration-testing-ip-integrated.html">IP-integrated debug instrumentation</a>,
+which simplifies system-level debug by exposing the IP’s operating state at a
+high level.</li>
+</ul>
+
+<h3 id="resources-9">Resources</h3>
+<ul>
+  <li><a href="https://github.com/featherweight-ip">github</a></li>
+</ul>
+
+<h2 id="efablessgoogle-multi-project-wafer-mpw">eFabless/Google Multi-Project Wafer (MPW)</h2>
+
+<p><strong>Stage:</strong> Complete (Dec 2020)</p>
+
+<p>Taping out a chip has been a long-term dream of mine, and 
+one that seemed unlikely to be realized given the difficulty 
+and expense of doing so. A few 
+developments in the industry brought this dream within reach. 
+First, the <a href="https://theopenroadproject.org/">OpenROAD Project</a> assembled
+an RTL-to-GDS flow using open-source tools. Next, Google partnered with 
+<a href="https://www.skywatertechnology.com/">SkyWater Technology</a> 
+to release the CMOS 130nm PDK as open source, and partnered with 
+<a href="https://efabless.com/">eFabless</a> to run a series of 
+multi-project wafer (MPW) tape-outs for open-source designs to 
+validate the flow.</p>
+
+<p>I participated in the first tapeout with a very simple SoC design. 
+The design and testbench environment are shown below.</p>
+
+<p><a href="images/fwpayload_tb_diagram.png"> <img src="images/fwpayload_tb_diagram_391x240.png" alt="" /></a></p>
+
+<p><a href="images/FWPayload_rot.PNG"> <img src="images/FWPayload_rot_346x240.PNG" alt="" /></a></p>
+
+<p><a href="images/open_mpw1_1.91.png"> <img src="images/open_mpw1_1.91_458x240.png" alt="" /></a></p>
+
+<p>Learning about the tools and key considerations across the entire
+process was extremely educational – and, a learning project that
+I would have been unlikely to undertake as a personal project in 
+the absence of an open-source toolflow.</p>
+
+<h3 id="resources-10">Resources</h3>
+<ul>
+  <li><a href="https://github.com/mballance/caravel_fwpayload">github</a></li>
+  <li><a href="https://www.businesswire.com/news/home/20210406005366/en/First-Google-Sponsored-MPW-Shuttle-Launched-at-SkyWater-with-40-Open-Source-Community-Submitted-Designs">PR</a></li>
+</ul>
+
+<h2 id="sveditor---a-systemverilog-eclipse-plug-in">SVEditor - A SystemVerilog Eclipse Plug-in</h2>
+
+<p><strong>Stage:</strong> Production / Archived</p>
+
+<p><a href="images/SVEditor.gif"> <img src="images/SVEditor_456x480.gif" alt="" /></a></p>
+
+<p>In 2008, when I started learning SystemVerilog, I had spent 
+several years writing software using the <a href="https://eclipse.org">Eclipse</a>
+integrated development environment.
+My experience was that the language-support features Eclipse provided
+for Java and C/C++ made me significantly more productive vs using a
+plain-text editor like Emacs or Vi, and I found
+myself missing that when writing SystemVerilog.</p>
+
+<p>SVEditor indexes a user-specified list of Verilog and SystemVerilog
+files, and uses the extracted symbols to support navigation across
+the codebase, context-specific content assist, and to automate 
+creation of code.</p>
+
+<p>SVEditor is no longer being actively developed, but I continue to
+use it almost any time I write Verilog and SystemVerilog code.</p>
+
+<h3 id="resources-11">Resources</h3>
+<ul>
+  <li><a href="https://sites.google.com/site/svedvkit">website</a></li>
+  <li><a href="https://github.com/sveditor/sveditor">github</a></li>
+</ul>
+
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='./public/js/script.js'></script>
+  </body>
+</html>
