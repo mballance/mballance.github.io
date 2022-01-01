@@ -1,0 +1,27 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+    build-and-deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2.3.1
+        - name: Install Jekyll
+          run: |
+            sudo apt-get install ruby-full build-essential zlib1g-dev
+            sudo gem install jekyll bundler jekyll-theme-tactile redcarpet pygments.rb jekyll-paginate
+        - name: Install and build
+          run: |
+            make
+
+        - name: Deploy
+          uses: JamesIves/github-pages-deploy-action@4.1.7
+          with:
+            branch: gh-pages # The branch the action should deploy to.
+            folder: web # The folder the action should deploy.
+

@@ -1,4 +1,7 @@
-# Publications
+---
+layout: page
+title: Publications
+---
 
 ## PyVSC: SystemVerilog-Style Constraints and Coverage in Python
 

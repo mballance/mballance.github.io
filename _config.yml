@@ -1,6 +1,23 @@
-theme: jekyll-theme-slate
+#theme: jekyll-theme-slate
 
-site.google_analytics: G-D4CQR7PB0Z
-site:
-   google_analytics: G-D4CQR7PB0Z
+title:               'Matthew Ballance'
+tagline:             ''
+description:         ''
+url:                 '.'
+baseurl:             '.'
+paginate:            5
+google_analytics_id: G-D4CQR7PB0Z
+
+# About/contact
+author:
+    name:              Matthew Ballance
+    url:               http://mballance.github.io
+    email:             matt.ballance@gmail.com
+
+github:
+    repo: http://github.com/mballance
+
+plugins:
+    - jekyll-paginate
+
 

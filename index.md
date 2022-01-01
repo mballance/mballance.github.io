@@ -1,45 +1,32 @@
-# Home
+---
+layout: default
+title: Home
+---
 
-**Under Construction**
 
-## Professional Life
-
-I work as a Product Engineer in the Electronic Design 
-Automation (EDA) field, with a focus on the front-end of the 
-design and verification process.
-
-My current focus is on standardization of the 
-[Accellera Portable Stimulus Standard](https://www.accellera.org/activities/working-groups/portable-stimulus)
-verification language, and my employer's implementation
-of that standard. The Portable Stimulus Specification (PSS) is
+Professionally, I work as a Product Engineer at Siemens EDA with a focus on 
+developing the [Accellera Portable Stimulus Standard](https://www.accellera.org/activities/working-groups/portable-stimulus)
+language standard, and with our implementation of that standard. 
+The Portable Stimulus Specification (PSS) is
 a model-based capture of test intent that enables automated 
 generation of random scenario-level tests. While there are 
 many potential applications for such tests, a key target is
 creation of software-driven SoC-level tests for verifying 
 proper integration, performance, and power.
 
-Prior to working as a product engineer on Portable Stimulus,
-I was the lead developer for a Virtual Platform tool. 
-Virtual platforms are used to run an abstract description
-of a system at speeds that support moderate application-software
-execution. The initial version of the tool was developed
-prior to the availability of transaction-level SystemC, 
-and provided a proprietary framework for developing models
-in ANSI C. Subsequent versions supported SystemC TLM.
+Over the past 20+ years in the EDA industry, I've worked in product development, 
+marketing, and management roles in the areas of hardware/software co-verification, 
+transaction-level modeling, IP encapsulation and reuse, and Portable Test and Stimulus.
 
-Prior to working on virtual platforms, I worked on a 
-hardware/software co-verfication tool. Early in this
-project's lifecycle, processors were still delivered
-as individually-packaged parts. Some model of the 
-processor's behavior was needed to verify that the 
-design inside the ASIC(s) connected to the processor.
-The tool provided core services to integrate one or
-more processor models with the simulation environment,
-a library of processor models, and support for a 
-variety of software debuggers.
+Much of my work has focused on early stange technologies, with an emphasis
+on helping users understand how best to incorporate those new technologies
+into their existing design and verification flows.
+
+I have a deep personal interest in functional verification methodologies and 
+techniques, and contribute to several open source projects in that domain. 
 
 ## Publications
-I enjoy writing about the work I'm doing, and presenting 
+I enjoy writing about the work I'm doing, and enjoy presenting 
 at conferences. You can find a [list of publications here](publications.html). 
 
 I maintain a [blog for my personal projects](https://bitsbytesgates.blogspot.com/)
@@ -55,10 +42,4 @@ interest in hardware/gateware and functional verification,
 my projects, unsurprisingly, focus on this space. 
 
 See more detail about key projects [here](projects.html).
-
-Check out my GitHub profile [here](https://github.com/mballance).
-
-
-
-
 

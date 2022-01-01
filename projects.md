@@ -1,4 +1,7 @@
-# Open-Source Projects
+---
+layout: page
+title: Projects
+---
 
 ## Random Generation, Solvers, and Functional Coverage
 
