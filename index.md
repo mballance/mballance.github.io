@@ -19,7 +19,7 @@ marketing, and management roles in the areas of hardware/software co-verificatio
 transaction-level modeling, IP encapsulation and reuse, and Portable Test and Stimulus.
 
 Much of my work has focused on early stange technologies, with an emphasis
-on helping users understand how best to incorporate those new technologies
+on helping users understand how best to incorporate these new technologies
 into their existing design and verification flows.
 
 I have a deep personal interest in functional verification methodologies and 
@@ -41,5 +41,4 @@ find that projects are the perfect way for me to learn. Given my
 interest in hardware/gateware and functional verification, 
 my projects, unsurprisingly, focus on this space. 
 
-See more detail about key projects [here](projects.html).
 
