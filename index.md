@@ -3,20 +3,22 @@ layout: default
 title: Home
 ---
 
+Professionally, I work as a silicon design engineer at AMD, with a focus on 
+functional verification methodology and verification.
 
-Professionally, I work as a Product Engineer at Siemens EDA with a focus on 
-developing the [Accellera Portable Stimulus Standard](https://www.accellera.org/activities/working-groups/portable-stimulus)
-language standard, and with our implementation of that standard. 
+Over the preceeding 20+ years in the EDA industry, I've worked in product 
+development, marketing, and management roles in the areas of 
+hardware/software co-verification, transaction-level modeling, IP 
+encapsulation and reuse, and Portable Test and Stimulus.
+
+A key industry focus from 2014 to present has been standardization of
+the [Accellera Portable Stimulus Standard](https://www.accellera.org/activities/working-groups/portable-stimulus).
 The Portable Stimulus Specification (PSS) is
 a model-based capture of test intent that enables automated 
 generation of random scenario-level tests. While there are 
 many potential applications for such tests, a key target is
 creation of software-driven SoC-level tests for verifying 
 proper integration, performance, and power.
-
-Over the past 20+ years in the EDA industry, I've worked in product development, 
-marketing, and management roles in the areas of hardware/software co-verification, 
-transaction-level modeling, IP encapsulation and reuse, and Portable Test and Stimulus.
 
 Much of my work has focused on early stange technologies, with an emphasis
 on helping users understand how best to incorporate these new technologies
