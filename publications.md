@@ -3,6 +3,22 @@ layout: page
 title: Publications
 ---
 
+## Co-Developing IP and SoC Bring-up Firmware with PSS
+
+**Publication:** DVCon 2022
+
+***Abstract -*** 
+Runtime-configuration and operation of design IP is increasingly dependent 
+on firmware. However, firmware for those IPs is often created too late, 
+and in an unsuitable form, to be helpful in SoC-bringup tests. This
+presents an obstacle to creating SoC integration tests, and often results 
+in late discovery of hardware/software interaction issues. This paper 
+proposes an Accellera Portable Test and Stimulus (PSS)-enabled flow for 
+co-developing and coverifying design IP and firmware.
+
+
+[Paper](publications/2022_CoDeveloping_Firmware_and_IP_with_PSS.pdf)
+
 ## PyVSC: SystemVerilog-Style Constraints and Coverage in Python
 
 **Publication:** Workshop on Open-source EDA Technology (WOSET) 2020
