@@ -31,7 +31,7 @@ techniques, and contribute to several open source projects in that domain.
 I enjoy writing about the work I'm doing, and enjoy presenting 
 at conferences. You can find a [list of publications here](publications.html). 
 
-I maintain a [blog for my personal projects](https://bitsbytesgates.blogspot.com/)
+I maintain a [blog for my personal projects](https://bitsbytesgates.com/)
 where I write about new things I'm exploring, and enhancements
 I'm making to the various side projects that I work on. 
 
